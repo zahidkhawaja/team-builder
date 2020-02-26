@@ -6,8 +6,8 @@ const List = props => {
             {props.list.map(item => (
                 <div className = "person" key = {item.id}>
                     <h2>{item.name}</h2>
-                    <h2>{item.email}</h2>
-                    <h2>{item.role}</h2>
+                    <h4>{item.email}</h4>
+                    <h4>{item.role}</h4>
                     </div>
             ))}
         </div>

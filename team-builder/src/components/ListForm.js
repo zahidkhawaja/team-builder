@@ -13,23 +13,27 @@ const ListForm = props => {
 
     const submitForm = event => {
         event.preventDefault();
-        props.addNewMember(member);
-        setMember({name: "", email: "", role: ""});
+        if(member.name.length >= 1) {
+            props.addNewMember(member);
+            setMember({name: "", email: "", role: ""});
+        } else {
+            console.log("ERROR: Cannot leave fields empty");
+        }
     };
 
     return (
         <form onSubmit = {submitForm}>
 
-            <label htmlFor = "name">Name</label>
-            <input id = "name" name = "name" type = "text" onChange = {handleChanges} value = {member.name}></input>
+            <label htmlFor = "name">Name </label>
+            <input id = "name" name = "name" type = "text" onChange = {handleChanges} value = {member.name} placeholder = "Enter name"></input>
             <br/>
 
-            <label htmlFor = "email">Email</label>
-            <input id = "email" name = "email" type = "email" onChange = {handleChanges} value = {member.email}></input>
+            <label htmlFor = "email">Email </label>
+            <input id = "email" name = "email" type = "email" onChange = {handleChanges} value = {member.email} placeholder = "Enter email"></input>
             <br/>
 
-            <label htmlFor = "role">Role</label>
-            <input id = "role" name = "role" type = "text" onChange = {handleChanges} value = {member.role}></input>
+            <label htmlFor = "role">Role </label>
+            <input id = "role" name = "role" type = "text" onChange = {handleChanges} value = {member.role} placeholder = "Enter role"></input>
             <br/>
 
             <button type = "submit">Add</button>

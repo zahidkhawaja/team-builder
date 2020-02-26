@@ -21,7 +21,7 @@ const addNewMember = member => {
     email: member.email,
     role: member.role
   };
-  setList([...list, newMember])
+    setList([...list, newMember])
 };
 
 
