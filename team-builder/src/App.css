@@ -15,13 +15,18 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-body {
+  display: flex;
+  justify-content: center;
 }
 
 .App-link {
@@ -35,4 +40,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.person {
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
