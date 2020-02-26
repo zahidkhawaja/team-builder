@@ -52,7 +52,9 @@ const addNewMember = member => {
       <div className = "App-body">
         <div className = "App-components">
       <ListForm addNewMember = {addNewMember}/>
+      <div class = "list">
       <List list = {list}/>
+      </div>
       </div>
       </div>
     </div>
