@@ -11,7 +11,13 @@ function App() {
       name: "Timmy Harris",
       email: "timmy@gmail.com",
       role: "Backend Engineer"
-  }
+  },
+  {
+    id: 2,
+    name: "Jonathan Brown",
+    email: "jonny@hotmail.com",
+    role: "Frontend Engineer"
+}
 ])
 
 const addNewMember = member => {
