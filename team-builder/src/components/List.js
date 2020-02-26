@@ -8,6 +8,7 @@ const List = props => {
                     <h4>Name: {item.name}</h4>
                     <h4>Email: {item.email}</h4>
                     <h4>Role: {item.role}</h4>
+                    <button className = "button">EDIT</button>
                     </div>
             ))}
         </div>

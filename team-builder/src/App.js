@@ -20,6 +20,19 @@ function App() {
 }
 ])
 
+const [memberToEdit, setMemberToEdit] = useState("");
+
+const editMember = member => {
+  const editedMember = {
+    id: Date.now(),
+    name: member.name,
+    email: member.email,
+    role: member.role
+  };
+    setMemberToEdit([...list, editedMember])
+    console.log(memberToEdit);
+};
+
 const addNewMember = member => {
   const newMember = {
     id: Date.now(),
