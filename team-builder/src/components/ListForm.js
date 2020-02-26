@@ -13,12 +13,8 @@ const ListForm = props => {
 
     const submitForm = event => {
         event.preventDefault();
-        if(member.name.length >= 1) {
-            props.addNewMember(member);
-            setMember({name: "", email: "", role: ""});
-        } else {
-            console.log("ERROR: Cannot leave fields empty");
-        }
+        props.addNewMember(member);
+        setMember({name: "", email: "", role: ""});
     };
 
     return (

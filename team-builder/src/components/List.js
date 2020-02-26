@@ -5,9 +5,9 @@ const List = props => {
         <div className = "list-person">
             {props.list.map(item => (
                 <div className = "person" key = {item.id}>
-                    <h2>{item.name}</h2>
-                    <h4>{item.email}</h4>
-                    <h4>{item.role}</h4>
+                    <h4>Name: {item.name}</h4>
+                    <h4>Email: {item.email}</h4>
+                    <h4>Role: {item.role}</h4>
                     </div>
             ))}
         </div>
